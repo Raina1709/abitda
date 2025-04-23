@@ -1,0 +1,110 @@
+:host {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  display: block;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.abitda-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: linear-gradient(to right, #005a9e, #0078d7);
+  color: white;
+  font-size: 1.1em;
+  border-bottom: 4px solid #f37021;
+}
+
+.top-nav span {
+  padding: 4px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin: 0 8px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-diagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+}
+
+.d3-chart-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* 🔽 Reduced from 20px to 10px */
+}
+
+.define-scope-btn {
+  padding: 12px 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.define-scope-btn:hover {
+  background-color: #218838;
+}
+
+.main-label {
+  text-anchor: middle;
+  font-weight: bold;
+  fill: #a000c8;
+}
+
+.level1-radial-label {
+  font-weight: 600; /* or bold */
+  font-size: 10px; /* increased from default 10px in script */
+  fill: #fff;
+  pointer-events: none;
+}
+
+
+.subcategory-label {
+  fill: #fff;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .top-nav {
+    font-size: 0.9em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .d3-chart-container {
+    max-width: 95%;
+  }
+
+  .define-scope-btn {
+    font-size: 1em;
+    padding: 10px 24px;
+  }
+}
